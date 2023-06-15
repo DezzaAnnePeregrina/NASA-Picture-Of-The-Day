@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
   const choice = document.querySelector('input').value
-  const url = `https://api.nasa.gov/planetary/apod?api_key=04UeUb6kPFVEjJ9kPfYltWWpgJ71q5R6lb7f8rSl&date=${choice}`
+  const url = `https://api.nasa.gov/planetary/apod?api_key=74DgdLe8L48VWF8MyJlvovJfPnrEdp60WfMUF7c8&date=${choice}`
   //04UeUb6kPFVEjJ9kPfYltWWpgJ71q5R6lb7f8rSl
   fetch(url)
       .then(res => res.json()) // parse response as JSON
