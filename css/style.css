@@ -51,14 +51,9 @@ main{
   padding: 40px;
 }
 
-.img__media{
+.media__container img, .media__container iframe{
   height: 400px;
   width: 600px;
-}
-
-iframe{
-  height: 400px;
-  width: 700px;
 }
 
 .search{
@@ -90,10 +85,10 @@ button{
 
 .img__explanation{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 footer{
@@ -114,12 +109,7 @@ footer{
     font-size: 15px;
   }
 
-  .img__media{
-    height: 200px;
-    width: 270px;
-  }
-  
-  iframe{
+.media__container img, .media__container iframe{
     height: 200px;
     width: 270px;
   }
