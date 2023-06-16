@@ -1,30 +1,126 @@
-body{
-  border: 4px solid red;
+*{
+  box-sizing: border-box;
 }
+
 .flex{
   display: flex;
 }
 
 header{
-  max-width: 100vw;
-  max-height: 100vh;
-  background-color: aquamarine;
+  background-color: aliceblue;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgb(10, 1, 39);
+}
+
+.img__cont img {
+  width: 80px;
+  height: 50px;
 }
 
 nav{
-  background-color: chocolate;
-  justify-content: space-evenly;
+  background-color: rgb(25, 6, 129);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
 }
 
-ul{
-  gap: 10%;
+a{
+  color: white;
 }
 
-img{
-  width: 200px;
+.title{
+  padding: 30px;
+  color: rgb(10, 1, 39);
+  font-weight: 400;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+.title__explanation{
+  color: rgb(10, 1, 39);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 main{
-  max-height: 100vh;
-  max-width: 100vw;
+  background-color: aliceblue;
+  padding: 40px;
+}
+
+.img__media{
+  height: 400px;
+  width: 600px;
+}
+
+iframe{
+  height: 400px;
+  width: 700px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1{
+  margin: 40px 0 20px 0;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 1, 39);
+}
+
+h3,label,button{
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 1, 39);
+}
+
+button{
+  background-color: rgb(25, 6, 129);
+  color: aliceblue;
+}
+
+.img__explanation{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer{
+  display: flex;
+  background-color: rgb(25, 6, 129);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+@media screen and (max-width: 450px){
+  .title,h1{
+    font-size: 25px;
+  }
+  
+  .title__explanation,.img__explanation,label,button{
+    font-size: 15px;
+  }
+
+  .img__media{
+    height: 200px;
+    width: 270px;
+  }
+  
+  iframe{
+    height: 200px;
+    width: 270px;
+  }
 }
